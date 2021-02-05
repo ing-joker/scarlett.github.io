@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/nav.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <header>
+        
+        
+    </header>
+    <nav>
+        <div>
+            <div class="logo">
+                <a  href="#" onclick="scrollperro('#Histori',2000)" ><img style="height: 60px; padding-top: 10px;" src="static/images/logo3.png" alt="Logo-SP"></a>
+            </div>
+            <div class="referencias-internas">
+                <a href="#" onclick="scrollperro('#Histori',2000)" >Biografía</a>
+                <a href="#" onclick="scrollperro('#Pelis',2000)" >Películas</a>
+                <a href="#" onclick="scrollperro('#Premios',2000)" >Premios</a>
+                <a href="#" onclick="scrollperro('#Galeria',2000)" >Galería</a>
+            </div>
+        </div>
+        <div class="linea-borde"></div>
+    </nav>
+    
+    <div class="contenido">
+        <div class="principal">
+            <div class="titulosxd">
+                <h3 id="Histori">Biografía</h3>
+            </div>
+
+<!--       BIOGRAFIA       BIOGRAFIA       BIOGRAFIA       BIOGRAFIA       BIOGRAFIA       BIOGRAFIA         -->
+            <div class="biografia" id="biografia">
+                <p><br><strong>Johansson</strong>  nació en la ciudad de Nueva York.1​ Su padre, Karsten Johansson, es un arquitecto danés originario de Copenhague (Dinamarca), y su abuelo paterno, Ejner Johansson, fue un guionista y director cinematográfico cuyo padre era sueco. Su madre, Melanie Sloan, una productora, proviene de una familia de origen judío asquenazí del Bronx. Los ancestros de Sloan emigraron a Nueva York desde Minsk, Imperio ruso. La actriz tiene una hermana mayor llamada Vanessa, quien también es actriz, un hermano llamado Adrian, un hermano mellizo llamado Hunter (quién apareció con ella en la película Manny & Lo); y un medio hermano mayor, Christian, del primer matrimonio de su padre.​<br><br> Johansson creció en un hogar con «poco dinero»,​ y con una madre que era una «cinéfila». Ella y su hermano mellizo asistieron a la escuela primaria en el barrio de clase media-alta de Greenwich Village, en Manhattan.​ Johansson comenzó su formación teatral asistiendo y graduándose de la Professional Children's School en Manhattan en el año 2002.​</p>
+            </div>
+            <br>
+<!--       PELICULAS       PELICULAS       PELICULAS       PELICULAS       PELICULAS       PELICULAS         -->
+            <div class="carrusel-pelis">
+                <div class="titulosxd">
+                    <h3 style="padding-bottom: 6px;" id="Pelis">Películas</h3>
+                    <div class="indicadores"></div>
+                </div>
+                <!--       CARRUSEL       CARRUSEL       CARRUSEL       CARRUSEL       CARRUSEL       CARRUSEL         -->
+                <div class="imagenes-carrusel">
+                    <button id="f-izq" class="f-izq" role="button"><i class="fas fa-angle-left"></i></button>
+                    <div class="contenedor-xd">
+                        <div class="carrusel">
+                            <div class="pelicula-xd" >
+                                <a href="#" onclick="toggle('viudanegra')"><img src="static/images/peliculas/viudanegra.jpg" alt="Viuda Negra miniatura"></a>
+                            </div>
+                            <div class="pelicula-xd" >
+                                <a href="#" onclick="toggle('historiadeunmatrimonio')"><img src="static/images/peliculas/historiadeunmatrimonio.jpg" alt="Historia de un matrimonio miniatura"></a>
+                            </div>
+                            <div class="pelicula-xd">
+                                <a href="#" onclick="toggle('AveCesar')"><img  src="static/images/peliculas/AveCesar.jpg" alt="¡Ave, César!  miniatura"></a>
+                            </div>
+                            <div class="pelicula-xd">
+                                <a href="#" onclick="toggle('civilwar')"><img  src="static/images/peliculas/civilwar.jpg" alt="Capitán América: Civil War miniatura"></a>
+                            </div>
+                            <div class="pelicula-xd">
+                                <a href="#" onclick="toggle('donjon')"><img  src="static/images/peliculas/donjon.jpg" alt="Un atrevido donjuán miniatura"></a>
+                            </div>
+                            <div class="pelicula-xd">
+                                <a href="#" onclick="toggle('endgame')"><img  src="static/images/peliculas/endgame.jpg" alt="Vengadores: Endgame miniatura"></a>
+                            </div>
+                            <div class="pelicula-xd">
+                                <a href="#" onclick="toggle('ghostintheshell')"><img  src="static/images/peliculas/ghostintheshell.jpg" alt="Ghost in the Shell: El alma de la máquina miniatura"></a>
+                            </div>
+                            <div class="pelicula-xd">
+                                <a href="#" onclick="toggle('infinitywar')"><img  src="static/images/peliculas/infinitywar.jpg" alt="Vengadores: Infinity War miniatura"></a>
+                            </div>
+                            <div class="pelicula-xd">
+                                <a href="#" onclick="toggle('ironman2')"><img src="static/images/peliculas/ironman2.jpg" alt="Iron Man 2 miniatura"></a>
+                            </div>
+                            <div class="pelicula-xd">
+                                <a href="#" onclick="toggle('jojorabbit')"><img  src="static/images/peliculas/jojorabbit.jpg" alt="Jojo Rabbit miniatura"></a>
+                            </div>
+                            <div class="pelicula-xd">
+                                <a href="#" onclick="toggle('Laisla')"><img  src="static/images/peliculas/Laisla.jpg" alt="La isla miniatura"></a>
+                            </div>
+                            <div class="pelicula-xd">
+                                <a href="#" onclick="toggle('LostinTranslation')"><img  src="static/images/peliculas/LostinTranslation.jpg" alt="Perdidos en Tokio miniatura"></a>
+                            </div>
+                            <div class="pelicula-xd">
+                                <a href="#" onclick="toggle('unzoologicoencasa')"><img  src="static/images/peliculas/unzoologicoencasa.jpg" alt="Un zoológico en casa miniatura"></a>
+                            </div>
+                            <div class="pelicula-xd" >
+                                <a href="#" onclick="toggle('lucy')"><img  src="static/images/peliculas/lucy.jpg" alt="Lucy miniatura"></a>
+                            </div>
+                            <div class="pelicula-xd">
+                                <a href="#" onclick="toggle('Unanochefueradecontrol')"><img  src="static/images/peliculas/Unanochefueradecontrol.jpg" alt="Hasta que el cuerpo aguante miniatura"></a>
+                            </div>
+                            <div class="pelicula-xd">
+                                <a href="#" onclick="toggle('undertheskin')"><img  src="static/images/peliculas/undertheskin.jpg" alt="Under the Skin miniatura"></a>
+                            </div>
+                            <div class="pelicula-xd">
+                                <a href="#" onclick="toggle('VickyCristinaBarcelona')"><img  src="static/images/peliculas/VickyCristinaBarcelona.jpg" alt="Vicky Cristina Barcelona miniatura"></a>
+                            </div>
+                            <div class="pelicula-xd">
+                                <a href="#" onclick="toggle('lapuntuacionperfecta')"><img  src="static/images/peliculas/lapuntuacionperfecta.jpg" alt="La Puntuación Perfecta miniatura"></a>
+                            </div>
+                        </div>
+                    </div>    
+
+                    <button id="f-der" class="f-der" role="button"><i class="fas fa-angle-right"></i></button>
+                </div>
+                <!--       PELIS INDIVIDUALES       PELIS INDIVIDUALES       PELIS INDIVIDUALES       PELIS INDIVIDUALES       PELIS INDIVIDUALES       PELIS INDIVIDUALES         -->
+                <div class="peli-individual" id="peli-individual">
+                    <div class="separado" id="viudanegra">
+                        <div class="poster" >
+                            <img src="static/images/peliculas/viudanegra.png" alt="Viuda Negra Poster">
+                        </div>
+                        <div class="descripcion" >
+                            <h4>Viuda Negra</h4>
+                            <p>Al nacer, Natasha Romanoff se entrega a la KGB, que la prepara para convertirse en su principal agente. Cuando los Estados Unidos se separan, el gobierno trata de matarla mientras la acción actúa.</p>
+                        </div>
+                    </div>
+                    <div class="separado" id="historiadeunmatrimonio" style="display: none;">
+                        <div class="poster" >
+                            <img src="static/images/peliculas/historiadeunmatrimonio.png" alt="Historia de un matrimonio Poster">
+                        </div>
+                        <div class="descripcion" >
+                            <h4>Historia de un matrimonio</h4>
+                            <p>Un director de teatro y su mujer, actriz, luchan por superar un divorcio que les lleva al extremo tanto en lo personal como en lo creativo. Además de aprender a convivir para lograr una estabilidad en la vida de su pequeño hijo.</p>
+                        </div>
+                    </div>
+                    <div class="separado" id="AveCesar" style="display: none;">
+                        <div class="poster" >
+                            <img src="static/images/peliculas/AveCesar.png" alt="¡Ave, César!  Poster">
+                        </div>
+                        <div class="descripcion" >
+                            <h4>¡Ave, César! </h4>
+                            <p>En el Hollywood de los años 50, uno de los grandes estudios pretende hacer una gran superproducción de romanos protagonizada por una gran estrella (Clooney), pero el actor es secuestrado durante el rodaje.</p>
+                        </div>
+                    </div>
+                    <div class="separado" id="civilwar" style="display: none;">
+                        <div class="poster" >
+                            <img src="static/images/peliculas/civilwar.png" alt="Capitán América: Civil War Poster">
+                        </div>
+                        <div class="descripcion" >
+                            <h4>Capitán América: Civil War</h4>
+                            <p>"Captain America: Civil War” continúa la historia de “Avengers: Age of Ultron”, con Steve Rogers liderando un nuevo equipo de Vengadores en su esfuerzo por proteger a la humanidad. Tras otro incidente internacional relacionado con los Vengadores que ocasiona daños colaterales, la presión política fuerza a crear un sistema de registro y un cuerpo gubernamental para determinar cuándo se requiere los servicios del equipo. El nuevo status quo divide a los Vengadores mientras intentan salvar al mundo de un nuevo y perverso villano.</p>
+                        </div>
+                    </div>
+                    <div class="separado" id="donjon" style="display: none;">
+                        <div class="poster" >
+                            <img src="static/images/peliculas/donjon.png" alt="Un atrevido donjuán Poster">
+                        </div>
+                        <div class="descripcion" >
+                            <h4>Un atrevido donjuán</h4>
+                            <p>Jon Martello (Joseph Gordon-Levitt), un joven adicto al sexo en general y al porno en particular, intenta ejercer algún tipo de control sobre sí mismo. Jon tiende a deshumanizarlo todo: su apartamento, su coche, su familia, su iglesia y las mujeres. Sin embargo, hasta los ligues más sofisticados no pueden compararse con el placer que obtiene viendo pornografía en su ordenador. Insatisfecho con su vida, decide cambiar. Gracias a la relación con dos mujeres muy distintas, Barbara (Scarlett Johansson) y Esther (Julianne Moore), aprenderá grandes lecciones sobre la vida y el amor.</p>
+                        </div>
+                    </div>
+                    <div class="separado" id="endgame" style="display: none;">
+                        <div class="poster" >
+                            <img src="static/images/peliculas/endgame.png" alt="Vengadores: Endgame Poster">
+                        </div>
+                        <div class="descripcion" >
+                            <h4>Vengadores: Endgame</h4>
+                            <p>Después de los eventos devastadores de 'Vengadores: Infinity War', el universo está en ruinas debido a las acciones de Thanos. Con la ayuda de los aliados que quedaron, los Vengadores deberán reunirse una vez más para intentar deshacer sus acciones y restaurar el orden en el universo de una vez por todas, sin importar cuáles sean las consecuencias... Cuarta y última entrega de la saga "Vengadores".</p>
+                        </div>
+                    </div>
+                    <div class="separado" id="ghostintheshell" style="display: none;">
+                        <div class="poster" >
+                            <img src="static/images/peliculas/ghostintheshell.png" alt="Ghost in the Shell: El alma de la máquina Poster">
+                        </div>
+                        <div class="descripcion" >
+                            <h4>Ghost in the Shell: El alma de la máquina</h4>
+                            <p>En un Japón futurista, la joven Motoko Kusanagi, también conocida como 'the Major' Mira Killian, es la líder de grupo operativo de élite, Sección 9, cuyo objetivo es luchar contra el ciber-terrorismo y los crímenes tecnológicos. Al mando de esta unidad de operaciones encubiertas está Aramaki y destaca Batou, un ex-militar considerado como uno de los agentes más salvajes del grupo. Pero, después de un peligrosa misión, el cuerpo de Kusanagi queda dañado, siendo sometida a una operación quirúrgica para trasplantar su cerebro en un cuerpo robótico. Este nuevo cuerpo artificial le permitirá ser capaz de realizar hazañas sobrehumanas especialmente requeridas para su trabajo.</p>
+                        </div>
+                    </div>
+
+                    <div class="separado" id="infinitywar" style="display: none;">
+                        <div class="poster" >
+                            <img src="static/images/peliculas/infinitywar.png" alt="Vengadores: Infinity War Poster">
+                        </div>
+                        <div class="descripcion" >
+                            <h4>Vengadores: Infinity War</h4>
+                            <p>El todopoderoso Thanos ha despertado con la promesa de arrasar con todo a su paso, portando el Guantelete del Infinito, que le confiere un poder incalculable. Los únicos capaces de pararle los pies son los Vengadores y el resto de superhéroes de la galaxia, que deberán estar dispuestos a sacrificarlo todo por un bien mayor. Capitán América e Ironman deberán limar sus diferencias, Black Panther apoyará con sus tropas desde Wakanda, Thor y los Guardianes de la Galaxia e incluso Spider-Man se unirán antes de que los planes de devastación y ruina pongan fin al universo. ¿Serán capaces de frenar el avance del titán del caos?</p>
+                        </div>
+                    </div>
+
+                    <div class="separado" id="ironman2" style="display: none;">
+                        <div class="poster" >
+                            <img src="static/images/peliculas/ironman2.png" alt="Iron Man 2 Poster">
+                        </div>
+                        <div class="descripcion" >
+                            <h4>Iron Man 2</h4>
+                            <p>El mundo sabe que el multimillonario Tony Stark es Iron Man, el superhéroe enmascarado. Sometido a presiones por parte del gobierno, la prensa y la opinión pública para que comparta su tecnología con el ejército, Tony es reacio a desvelar los secretos de la armadura de Iron Man porque teme que esa información pueda caer en manos indeseables.</p>
+                        </div>
+                    </div>
+                    <div class="separado" id="jojorabbit" style="display: none;">
+                        <div class="poster" >
+                            <img src="static/images/peliculas/jojorabbit.png" alt="Jojo Rabbit Poster">
+                        </div>
+                        <div class="descripcion" >
+                            <h4>Jojo Rabbit</h4>
+                            <p>Jojo Rabbit es un niño viviendo en plena 2ª Guerra Mundial. Su única vía de escape es su amigo imaginario, una versión de Hitler étnicamente incorrecta que incita los ciegos ideales patrióticos del niño. Todo esto cambia cuando descubre que su madre Rosie está escondiendo a una joven judía en su ático.</p>
+                        </div>
+                    </div>
+                    <div class="separado" id="Laisla" style="display: none;">
+                        <div class="poster" >
+                            <img src="static/images/peliculas/Laisla.png" alt="La isla Poster">
+                        </div>
+                        <div class="descripcion" >
+                            <h4>La isla</h4>
+                            <p>Año 2019. Lincoln Seis-Eco y Jordan Dos-Delta se encuentran entre los cientos de residentes de una especie de campo de concentración. Dentro de ese lugar cuidadosamente vigilado, su vida cotidiana, como la de los demás, está rigurosamente controlada y llena de restricciones. La única salida -y la esperanza que todos comparten- consiste en ser elegidos para ir a "La isla", el único lugar del mundo que no ha sufrido los efectos contaminantes de un desastre ecológico que, al parecer, acabó con todos los hombres, excepto los habitantes de esa zona. Lincoln, que vive atormentado por pesadillas inexplicables, se siente cada vez más inquieto, y su creciente curiosidad lo llevará a descubrir un terrible secreto.</p>
+                        </div>
+                    </div>
+                    <div class="separado" id="LostinTranslation" style="display: none;">
+                        <div class="poster" >
+                            <img src="static/images/peliculas/LostinTranslation.png" alt="Perdidos en Tokio Poster">
+                        </div>
+                        <div class="descripcion" >
+                            <h4>Perdidos en Tokio</h4>
+                            <p>Bob Harris y Charlotte son dos norteamericanos que se encuentran en Tokio. Bob es una estrella de cine de mediana edad que ha venido a rodar un anuncio. Charlotte es una mujer joven que acompaña a todas partes a su marido, un fanático del trabajo. Incapaces de dormir, los caminos de Bob y Charlotte se cruzan por casualidad y no tardará en nacer entre ellos una sorprendente amistad. Se aventuran juntos en la vida nocturna de Tokio, comparten inolvidables experiencias con los habitantes de la ciudad y terminan descubriendo una nueva manera de ver la vida.</p>
+                        </div>
+                    </div>
+                    <div class="separado" id="unzoologicoencasa" style="display: none;">
+                        <div class="poster" >
+                            <img src="static/images/peliculas/unzoologicoencasa.png" alt="Un zoológico en casa Poster">
+                        </div>
+                        <div class="descripcion" >
+                            <h4>Un Zoológico en casa</h4>
+                            <p>Benjamin Mee es un columnista de prensa y escritor de artículos de aventuras que, como padre viudo, se enfrenta al desafío de criar a sus dos hijos pequeños. Mee deja su empleo y compra una vieja casa rural situada en un terreno de unas ocho hectáreas fuera de la ciudad que incluye una irrepetible particularidad añadida: un zoológico denominado el Parque de Animales Rosemoor, residencia de docenas de animales encomendados al cuidado de la jefa de guardas Kelly Foster y su entusiasta equipo. Sin experiencia, con poco tiempo y reducidísimo presupuesto, Mee se propone, con el apoyo de su familia y de la gente de la localidad, reabrir el zoo.</p>
+                        </div>
+                    </div>
+                    <div class="separado" id="lucy" style="display: none;">
+                        <div class="poster" >
+                            <img src="static/images/peliculas/lucy.png" alt="Lucy Poster">
+                        </div>
+                        <div class="descripcion" >
+                            <h4>Lucy</h4>
+                            <p>Lucy, una joven obligada a ejercer de mula de una nueva y potente droga, adquiere de repente enormes poderes sobrenaturales cuando la bolsa de la droga se rompe y los narcóticos entran en contacto con su cuerpo. Entonces, su cerebro comienza a aumentar la capacidad de uso hasta poder ser utilizado al 100%, convirtiéndose en una máquina letal con habilidades extraordinarias.</p>
+                        </div>
+                    </div>
+                    <div class="separado" id="Unanochefueradecontrol" style="display: none;">
+                        <div class="poster" >
+                            <img src="static/images/peliculas/Unanochefueradecontrol.png" alt="Hasta que el cuerpo aguante Poster">
+                        </div>
+                        <div class="descripcion" >
+                            <h4>Hasta que el cuerpo aguante</h4>
+                            <p>Cinco amigas alquilan una casa frente a la playa de Miami para celebrar una despedida de soltera, pero la fiesta llega demasiado lejos y el stripper contratado acaba muerto.</p>
+                        </div>
+                    </div>
+                    <div class="separado" id="undertheskin" style="display: none;">
+                        <div class="poster" >
+                            <img src="static/images/peliculas/undertheskin.png" alt="Under the Skin Poster">
+                        </div>
+                        <div class="descripcion" >
+                            <h4>Under the Skin</h4>
+                            <p>Un alien asume la forma de una atractiva mujer y deambula por las calles de Escocia, llevando a hombres solitarios y confiados a su destino fatal en la adaptación surrealista de la novela homónima de Michel Faber.</p>
+                        </div>
+                    </div>
+                    <div class="separado" id="VickyCristinaBarcelona" style="display: none;">
+                        <div class="poster" >
+                            <img src="static/images/peliculas/VickyCristinaBarcelona.png" alt="Vicky Cristina Barcelona Poster">
+                        </div>
+                        <div class="descripcion" >
+                            <h4>Vicky Cristina Barcelona</h4>
+                            <p>Dos jóvenes norteamericanas, Vicky (Rebecca Hall) y Cristina (Scarlett Johansson) van a Barcelona a pasar unas vacaciones de verano. Vicky es sensible, racional y tiene intención de casarse; Cristina es emocional y busca aventuras emocionantes; no sabe lo que quiere, sólo sabe lo que no quiere. En Barcelona, ambas se ven envueltas en una relación poco convencional con Juan Antonio (Javier Bardem), un carismático pintor vinculado emocionalmente a su tempestuosa ex-mujer, María Elena (Penélope Cruz).</p>
+                        </div>
+                    </div>
+                    <div class="separado" id="lapuntuacionperfecta" style="display: none;">
+                        <div class="poster" >
+                            <img src="static/images/peliculas/lapuntuacionperfecta.png" alt="La Puntuación Perfecta Poster">
+                        </div>
+                        <div class="descripcion" >
+                            <h4>La Puntuación Perfecta</h4>
+                            <p>Para conseguir ingresar en la prestigiosa Universidad de Princeton, siete jóvenes estudiantes deciden robar las respuestas de los exámenes de acceso a la Universidad. Aunque comprobarán que no se sabe qué es más dífícil: aprobar el exámen... o robarlo.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+<!--       PREMIOS       PREMIOS       PREMIOS       PREMIOS       PREMIOS       PREMIOS         -->
+            <div class="lista-premios">
+                <div class="titulosxd">
+                    <h3 id="Premios">Premios</h3>
+                </div>
+                <div class="premios-j">
+                    <div class="premio-si">
+                        <h6 style="font-size: 1.3em; border-bottom: 2px solid black;">Premios</h6>
+                        <p><strong>BAFTA</strong> Mejor actriz protagonista 2004</p>
+                        <p><strong>Tony</strong> Mejor actriz de reparto en una obra de teatro 2010</p>
+                        <p><strong>Gotham Awards</strong> Mejor reparto 2008</p>
+                        <p><strong>Hasty Pudding Theatricals, USA</strong> Mujer del año 2007</p>
+                        <p><strong>Premios Sant Jordi</strong> Mejor actriz extranjera 2005</p>
+                        <p><strong>Premios de la Asociación de Críticos de Cine de Los Ángeles</strong> Premio nueva generación 2004</p>
+                        <p><strong>Festival Internacional de Cine de Palm Springs</strong> Actriz emergente 2004</p>
+                        <p><strong>Festival Internacional de Cine de Venecia</strong> Mejor actriz 2004</p>
+                        <p><strong>Hollywood Film Festival</strong> Aztriz revelación 2003</p>
+                        <p><strong>Premios Boston Society of Film Critics</strong> Mejor actriz 2003</p>
+                        <p><strong>New York Film Critics Online</strong> Mejor actriz de reparto 2003</p>
+                        <p><strong>Premios Chlotrudis</strong> Mejor actriz de reparto 2002</p>
+                        <p><strong>Toronto Film Critics Association Awards</strong> Mejor actriz de reparto 2001</p>
+                        <p><strong>Premios Young Artist</strong> Mejor reparto 200</p>
+                        <p><strong>Premios Young Artist</strong> Mejor actriz 2002</p>
+                        <p><strong>YoungStar Awards</strong> Mejor actriz joven de drama	 1998</p>
+                        <h6 style="font-size: 1.3em; border-bottom: 2px solid black;">Nominaciones</h6>
+                        <p><strong>ÓSCAR</strong> Mejor actriz 2020</p>
+                        <p><strong>ÓSCAR</strong> Mejor actriz de reparto 2020</p>
+                        <p><strong>BAFTA</strong> Mejor actriz protagonista 2004</p>
+                        <p><strong>BAFTA</strong> Mejor actriz protagonista 2004</p>
+                        <p><strong>BAFTA</strong> Mejor actriz protagonista 2020</p>
+                        <p><strong>BAFTA</strong> Mejor actriz de reparto 2020</p>
+                        <p><strong>Globo de Oro</strong> Mejor actriz - Drama 2004</p>
+                        <p><strong>Globo de Oro</strong> Mejor actriz - Comedia o musical 2004</p>
+                        <p><strong>Globo de Oro</strong> Mejor actriz - Drama 2005</p>
+                        <p><strong>Globo de Oro</strong> Mejor actriz de reparto 2006</p>
+                        <p><strong>Globo de Oro</strong> Mejor actriz - Drama 2020</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            <br>
+<!--       GALERIA       GALERIA       GALERIA       GALERIA       GALERIA       GALERIA         -->
+            <div class="galeria-imagenes">
+                <div class="titulosxd">
+                    <h3 id="Galeria">Galería</h3>
+                </div>
+                <div class="imagenes-agrupadas">
+                    <div class="foto">
+                        <img src="static/images/galeriaj/1.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/2.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/3.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/4.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/5.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/6.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/7.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/8.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/9.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/10.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/11.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/12.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/13.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/14.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/15.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/16.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/17.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/18.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/19.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/20.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/21.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/22.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/23.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/24.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/25.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/26.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/27.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/28.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/29.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/30.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/31.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/32.jpg" alt="Scarlett">
+                    </div>
+                    <div class="foto">
+                        <img src="static/images/galeriaj/33.jpg" alt="Scarlett">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--       PANEL LATERAL       PANEL LATERAL       PANEL LATERAL       PANEL LATERAL       PANEL LATERAL       PANEL LATERAL         -->        
+        <div class="lateral">
+            <div class="relleno">
+                <img style="width: 100%; height: 100%; border:3px ridge #0f69d4;" src="static/images/peliculas/jojorabbit.png" alt="jojo Rabbit">
+            </div>
+            <div class="ultima-peli">
+                <h3>Viuda Negra</h3>
+                <img src="static/images/peliculas/viudanegra.png" alt="Viuda Negra">
+                <p>Al nacer, Natasha Romanoff se entrega a la KGB, que la prepara para convertirse en su principal agente. Cuando los Estados Unidos se separan, el gobierno trata de matarla mientras la acción actúa.</p>
+            </div> 
+        </div>
+    </div>
+<!--       PIE DE PAGINA       PIE DE PAGINA       PIE DE PAGINA       PIE DE PAGINA       PIE DE PAGINA       PIE DE PAGINA         -->
+    <div class="pie-pagina">
+    <h4>Diseñado por <a href="http://www.linkedin.com/in/david-pérez-mendoza-a9509b1a2" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">Ing David Pérez</a></h4>
+    </div>
+    <script src="static/js/principa.js"></script>
+
+</body>
+</html>
+

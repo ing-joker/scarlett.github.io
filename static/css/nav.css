@@ -1,0 +1,312 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+    background: rgb(180, 180, 180);
+    font-family: 'Lemonada', cursive;
+    font-size: 16px;
+}
+/*   Barra de Navegación   */
+header{
+    height: 60px;
+    position: static;
+}
+nav{
+    background: rgb(228, 228, 228);
+    background: linear-gradient(90deg, rgba(228,228,228,0.7) 0%, rgba(113,113,113,0.7) 100%), url(../images/notitle.png);
+    background-position: center center;
+	background-size: cover;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+}
+nav >div{
+    margin: 0 auto;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    color: black;
+    padding-right: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+nav a:hover{
+    color: #1476df;       /*ajustar*/
+    opacity: 0.8;
+}
+nav .logo a:hover{
+    opacity: 0.8;
+}
+.linea-borde{
+    height: 7px;
+    background: rgb(15,105,212);
+    background: linear-gradient(90deg, rgba(15,105,212,1) 0%, rgba(158,219,230,1) 100%);
+    width: 100%;
+}
+/*  Cuerpo  */
+.contenido{
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+/*  panel lateral   */
+.lateral{
+    display: block;    
+    font-size: 0.8em;
+    color: #000;
+}
+.lateral .relleno{
+    text-align: center;
+    margin-bottom: 1em;
+    
+}
+.lateral .ultima-peli{
+    top: 80px;
+    max-height: 500px;
+    position: sticky;
+    background-color: #fff;
+    border-top-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+    border-style: ridge;
+    border-color: rgb(15, 105, 212);
+    text-align: center;
+}
+.lateral img{
+    width: 80%;
+    margin: auto;
+    box-shadow: 5px 10px 8px 10px #888888;
+}
+.lateral p{
+    line-height: 1.1em;
+    padding: 0.3em 0.3em;
+}
+/*  contenido principal     */
+
+.principal{
+    padding-right: 1em;
+}
+.principal p{
+    line-height: 1.3em;
+}
+.principal .titulosxd{
+    font-size: 1.5em;
+    padding-left: 1em;
+    background: linear-gradient(90deg, rgba(15,105,212,0.7) 0%, rgba(158,219,230,0.7) 100%), url(../images/notitle2.png);
+    background-position: center center;
+	background-size: cover;
+    border:3px ridge #0f69d4;
+}
+.biografia{
+    background-color: #fff;
+    display: flex;
+    margin-top: 1em;
+    padding: 1em 1em;
+    box-shadow: 10px 10px 10px rgba(0,0,0, .53);
+}
+
+/* Carrusel */
+.titulosxd {
+    display: flex;
+	justify-content: space-between;
+    align-items: end;
+}
+
+.titulosxd .indicadores button {
+	background: #fff;
+	height: 4px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+.titulosxd .indicadores button:hover,
+.titulosxd .indicadores button.activo {
+	background: rgb(15,105,212);
+}
+.carrusel-pelis{
+    margin-bottom: 4em;
+}
+
+.carrusel-pelis .imagenes-carrusel{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.carrusel-pelis .imagenes-carrusel .f-izq,
+.carrusel-pelis .imagenes-carrusel .f-der{
+    position: absolute;
+	border: none;
+	background: rgba(15, 105, 212,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+.carrusel-pelis .imagenes-carrusel .f-izq{
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    left: 0;
+}
+.carrusel-pelis .imagenes-carrusel .f-der{
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    right: 0;
+}
+.carrusel-pelis .imagenes-carrusel .f-izq:hover,
+.carrusel-pelis .imagenes-carrusel .f-der:hover{
+    background: rgba(15, 105, 212,0.9);
+}
+
+.carrusel-pelis .contenedor-xd{
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.carrusel-pelis .contenedor-xd .carrusel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.carrusel-pelis .contenedor-xd .carrusel .pelicula-xd{
+    min-width: 33.33%;
+    transition: .3s ease all;
+}
+.carrusel-pelis .contenedor-xd .carrusel .pelicula-xd.hover{
+    transform: scale(1.2);
+	transform-origin: center;
+}
+.carrusel-pelis .imagenes-carrusel .carrusel .pelicula-xd img {
+    width: 100%;    
+}
+/* pelicula individual */
+.peli-individual{
+    background-color: #fff;
+    box-shadow: 10px 10px 10px rgba(0,0,0, .53);
+    min-height: 24.75em;
+}
+.peli-individual .separado img{
+    height: 20.625em;                          /* ancho de imagen de pelicula sola */
+    float: left;
+}
+.peli-individual .separado{
+    margin: auto;
+    padding: 1em 1em;
+}
+.peli-individual .poster{
+    margin-right: 1em;
+}
+.peli-individual .descripcion{
+    text-align: center;
+}
+/*  galeria */
+.galeria-imagenes{
+    width: 100%;
+}
+.galeria-imagenes .imagenes-agrupadas{
+    margin-top: 1em;
+    padding: 1em 1em;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px rgba(0,0,0, .53);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.5em;
+}
+.galeria-imagenes .imagenes-agrupadas img{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+}
+.galeria-imagenes .imagenes-agrupadas img{
+    transition: .4s ease all;
+}
+
+.galeria-imagenes .imagenes-agrupadas img:hover{
+    border-radius: 1em;
+    transform: scale(1.2);
+	transform-origin: center;
+}
+/*      Premios     */
+.lista-premios{
+    width: 100%;
+}
+.lista-premios .premios-j{
+    margin-top: 1em;
+    padding: 1em 1em;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px rgba(0,0,0, .53);
+}
+.lista-premios .premios-j p{
+    padding-top: 0.5rem;
+}
+/*  Pie de Página   */
+.pie-pagina{
+    margin-top: 3em;
+    bottom: 0px;
+    width: 100%;
+    color: cornflowerblue;
+    background: black;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.pie-pagina h4{
+    margin-block-end:0.5rem;
+    bottom: 0px;
+}
+/*       responsive del carrusel min 32       */
+
+@media screen and (max-width: 768px){
+    .contenido{
+        display: flex;
+    }
+    .lateral{
+        display: none;
+    }
+    .carrusel-pelis .contenedor-xd {
+		overflow: visible;
+        padding: 1em 1em;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px rgba(0,0,0, .53);
+    margin-bottom: 2em;
+	}
+
+	.carrusel-pelis .contenedor-xd .carrusel {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+	.carrusel-pelis .indicadores,
+	.carrusel-pelis .f-izq,
+	.carrusel-pelis .f-der {
+		display: none;
+	}
+}
+@media screen and (max-width: 400px){
+    nav >div{
+        flex-direction: column;
+		text-align: center;
+    }
+    nav a{
+        padding: 0 0;
+        margin: 0 0;
+    }
+}
