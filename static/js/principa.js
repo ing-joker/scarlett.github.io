@@ -74,15 +74,30 @@ function toggle(sola){
 	unica.style.display='block';
 	console.log(sola.replace('.','#'))
 	scrollperro('#peli-individual',500)
-	//var scroll2 = $('#peli-individual').offset.top;
-	//$('html, body').animate({
-	//		scrollTop: scroll -85
-	//}, 2000);
 }  
+var ganancia =105;
+
+$(document).ready(function(){
+	if($(window).width()<=400){
+	ganancia=175;
+	$("#cabezon").css("height","140px");
+}
+});
+$(window).resize(function(){
+	if($(window).width()<=400){
+	ganancia=175;
+	$("#cabezon").css("height","140px");
+	}
+	if($(window).width()>400){
+	ganancia =105;
+	$("#cabezon").css("height","60px");
+	}   
+});
+
 function scrollperro(xd,t){
 	var scroll = $(xd).offset().top;
 	$('html, body').animate({
-		scrollTop: scroll -105
+		scrollTop: scroll -ganancia
 	}, t);
 };
 
